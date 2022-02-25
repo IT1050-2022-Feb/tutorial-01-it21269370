@@ -7,13 +7,43 @@ Do not change the code given in the main() function when you are implementing yo
 #include <stdio.h>
 
 int main() {
-   int no1, no2;
-   printf("Enter a value for no 1 : ");
-   scanf("%d", &no1);
-   printf("Enter a value for no 2 : ");
-   scanf("%d", &no2);
-   printf("%d ", minimum(no1, no2));
-   printf("%d ", maximum(no1, no2));
-   printf("%d ", multiply(no1, no2));
+  int no1, no2;
+  printf("Enter a value for no 1 : ");   //input
+  scanf("%d", &no1);
+  printf("Enter a value for no 2 : ");
+  scanf("%d", &no2);
+  printf("%d ", minimum(no1, no2));  //results
+  printf("%d ", maximum(no1, no2));
+  printf("%d ", multiply(no1, no2));
    return 0;
+}
+
+
+int minimum(int no1,int no2){    //find the minimum number
+	
+	if(no1<no2){
+		
+    return no1;
+	}
+	else{
+		
+    return no2;
+	}
+	
+}
+int maximum(int no1,int no2){    //find the maximum number
+		if(no1>no2){
+		
+      return no1;
+	}
+	else{
+		
+    return no2;
+	}
+}
+
+
+int multiply(int no1,int no2){  //find the result of multiply
+	
+  return no1 * no2;
 }
